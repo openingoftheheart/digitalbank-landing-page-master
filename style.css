@@ -67,6 +67,8 @@
   transform: translateY(-2px);
     }
 
+    .hamburger {display: none;}
+
 /* HERO SECTION */
 
 .hero-container {
@@ -176,7 +178,7 @@
 }
    
 .service {
-    width: 350px;
+    /* width: 350px; */
     padding: 3em;
 }
 
@@ -321,18 +323,81 @@
 }
 
 .article img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
 }
 }
+
+/*BIG TABLETS*/
+@media (max-width: 992px) {
+.container {max-width: 990px;}
+
+.about-us {
+    padding: 1em;
+}
+   
+.about-us-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+
+.about-us-header p {
+    font-size: 0.875rem;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.service {padding: 1em;}
+.service img {margin-bottom: 1.2em;}
+.service p {font-size: 0.875rem;}
+
+
+.latest-articles {
+    padding: 1.5em;
+}
+
+.latest-articles h2 {
+    margin-bottom: 0.9em;
+    font-size: 1.5rem;
+    margin-left: 0.9em;
+}
+
+.article {margin: 1em;}
+
+   
+.article .name {
+    font-size: 0.8rem;
+    margin: 1em 0;
+}
+
+.article h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8em;
+}
+
+.article p {font-size: 0.875rem;}
+
+.footer {
+    padding: 1.2em;
+}
+   
+.social-links {
+    margin-top: 1em;
+    gap: 1em;
+}
+}
+
 /* TABLETS */
 @media (max-width: 768px) {
+
+
 .hero-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     max-width: 700px;
 }
 
 .hero-info {
-    width: 100%;
     margin-left: 0;
     padding: 1.5em;
 }
@@ -342,13 +407,12 @@
 }
 
 .about-us {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-
+.service {width: 300px; margin: 1em;}
 .our-services {
     flex-direction: column;
     justify-content: center;
@@ -356,7 +420,6 @@
 }
 
 .latest-articles {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -369,21 +432,12 @@
     
 }
 
-.article img {
-    width: 100%;
-}
 
 .footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-
-nav {
-    flex-direction: column;
-    gap: 1em;
 }
 
 li {
